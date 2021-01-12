@@ -48,7 +48,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>AtCoder_CS.source.Question_A</StartupObject>
+    <StartupObject>AtCoder_CS.source.Question_C</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <None Include="App.config" />

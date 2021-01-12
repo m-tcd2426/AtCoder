@@ -11,25 +11,28 @@ namespace AtCoder_CS.source
     {
         public static void Main(string[] args)
         {
-            var sw = new System.IO.StreamWriter(Console.OpenStandardOutput()) { AutoFlush = false };
-            Console.SetOut(sw);
-
-            // 文字列の入力
-            string s = Console.ReadLine();
-
             // 整数の入力
-            long n = long.Parse(Console.ReadLine());
+            int n = int.Parse(Console.ReadLine());
 
-            // 文字列配列の入力
-            string[] inputStrArray = Console.ReadLine().Split(' ');
+            // 整数配列
+            List<int> x = new List<int>();
+            List<int> y = new List<int>();
+            for(int i = 0; i < n; i++)
+            {
+                string[] line = Console.ReadLine().Split(' ');
+                x.Add(int.Parse(line[0]));
+                y.Add(int.Parse(line[1]));
+            }
 
-            // 整数配列の入力
-            var inputLongArray = Console.ReadLine().Split(' ').Select(i => long.Parse(i)).ToArray();
-
-
-            Console.WriteLine(s);
-
-            Console.Out.Flush();
+            int ans = 0;
+            for (int i = 0; i < n; i++)
+            {
+                for(int j = i+1; j < n; j++)
+                {
+                    if (Math.Abs(x[i] - x[j]) >= Math.Abs(y[i] - y[j])) ans++;
+                }
+            }
+            Console.WriteLine(ans);
         }
     }
 }
