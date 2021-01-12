@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AtCoder_CS.source
 {
-    class Question_E
+    class F
     {
         public static void Main(string[] args)
         {

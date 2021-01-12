@@ -48,18 +48,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>AtCoder_CS.source.Question_A</StartupObject>
+    <StartupObject>AtCoder_CS.source.A</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="source\Question_A.cs" />
-    <Compile Include="source\Question_B.cs" />
-    <Compile Include="source\Question_C.cs" />
-    <Compile Include="source\Question_D.cs" />
-    <Compile Include="source\Question_E.cs" />
-    <Compile Include="source\Question_F.cs" />
+    <Compile Include="source\A.cs" />
+    <Compile Include="source\B.cs" />
+    <Compile Include="source\C.cs" />
+    <Compile Include="source\D.cs" />
+    <Compile Include="source\E.cs" />
+    <Compile Include="source\F.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="source\input.txt" />
